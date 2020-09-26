@@ -18,28 +18,27 @@
     </pages:PopupPage.Animation>
 
     <pages:PopupPage.Content>
-        
-        <ScrollView>
-            <Frame
+
+        <Frame
                 CornerRadius="20"
                 WidthRequest="295"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 BackgroundColor="White"
                 IsClippedToBounds="true">
-                <StackLayout
+            <StackLayout
                     Spacing="0"
                     BackgroundColor="White"
                     WidthRequest="295"
                     Margin="0,30,0,15">
-                    <Label x:Name="boldLabel" TextColor="Black" Margin="40,20,40,0" FontSize="18" VerticalOptions="Start" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
-                    <Label x:Name="descriptionLabel" TextColor="Black"  FontSize="16" Margin="15" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
-                    <StackLayout
+                <Label x:Name="boldLabel" TextColor="Black" Margin="40,20,40,0" FontSize="18" VerticalOptions="Start" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                <Label x:Name="descriptionLabel" TextColor="Black"  FontSize="16" Margin="15" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                <StackLayout
                         Orientation="Horizontal"
                         Margin="15,15,15,0"
                         Spacing="15">
 
-                        <Button
+                    <Button
                             x:Name="okButton"                            
                             BackgroundColor="#e0001a"
                             Clicked="Ok_Clicked"
@@ -49,11 +48,19 @@
                             FontSize="16"
                             HeightRequest="60"
                             CornerRadius="10"/>
-                       
 
-                    </StackLayout>
+                    <Button
+                            x:Name="cancelButton"                            
+                            BackgroundColor="Black"
+                            Clicked="Cancel_Clicked"
+                            BorderWidth="1"
+                            HorizontalOptions="FillAndExpand"
+                            TextColor="White"
+                            FontSize="16"
+                            HeightRequest="60"
+                            CornerRadius="10"/>
                 </StackLayout>
-            </Frame>
-        </ScrollView>
+            </StackLayout>
+        </Frame>
     </pages:PopupPage.Content>
 </pages:PopupPage>

@@ -3,8 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsPopups.MainPage">
 
-    <Grid>
+    <Grid Margin="20">
+        <Label Text="SO YOU SAID OKEY" IsVisible="false" TextColor="Crimson" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" x:Name="okeyLabel"/>
+        <Label Text="SO YOU SAID CANCEEELL" TextColor="BlueViolet" FontSize="20" IsVisible="false" HorizontalOptions="Center" VerticalOptions="End" x:Name="cancelLabel"/>
         <Button Clicked="Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" WidthRequest="120" Text="POP-UP"/>
+        
     </Grid>
 
 </ContentPage>
